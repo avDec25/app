@@ -1,0 +1,23 @@
+/* CSS Document */
+
+#topBanner {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100px;
+	background:#069;
+}	
+
+#topBanner_text {
+	padding-top:30px;
+	padding-left:40px;
+	text-align:left;
+	font-family:"Segoe UI Light";
+	color:#FFF;
+	font-size:30px;
+}
+
+#separator{
+	height:100px;
+}

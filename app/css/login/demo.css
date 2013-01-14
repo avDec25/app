@@ -1,0 +1,17 @@
+/* CSS Document */
+
+.myButton {
+	
+	height:100px;
+	width:500px;
+	background:#65E1F8;
+	
+    border-style: solid;
+	border-color:#18DBEB
+    border-width: 1px;
+ 
+    color: #FFFFFF;
+    text-align: center;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+}

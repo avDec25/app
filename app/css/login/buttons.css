@@ -1,0 +1,44 @@
+/* CSS Document */
+
+.buttonText{
+}
+
+.moduleButton{
+	position:relative;
+	height:100px;
+	width:500px;
+	margin-bottom:5px;
+	margin-right:2px;
+	
+	background:#B9B9FF;
+	
+    text-align: center;
+	font-family:"Segoe UI";
+	color:#000;
+	font-size:30px;
+	transition: all 0.3s linear;
+}
+
+.moduleButton:hover{
+	background:#6B8BC7;
+}
+
+.subjectButton{
+	position:relative;
+	height:100px;
+	width:500px;
+	margin-bottom:7px;
+	margin-right:7px;
+	
+	background:#B9B9FF;
+	
+    text-align: center;
+	font-family:"Segoe UI";
+	color:#000;
+	font-size:30px;
+	transition: all 0.3s linear;
+}
+
+.subjectButton:hover{
+	background:#6B8BC7;
+}
