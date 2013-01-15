@@ -4,7 +4,7 @@ class Main extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('login/login');
+		$this->login();
 	}
 	
 	public function perform_login() {
@@ -18,24 +18,42 @@ class Main extends CI_Controller {
 	
 	public function regPageSelect() {
 		if ($this->input->post('options') == 'faculty') {
-			$this->load->view('login/registerFaculty');			
+			$this->registerFaculty();			
 		} else {
-			$this->load->view('login/registerStudent');
+			$this->registerStudent();
 		}				
 	}
 	
 	public function performFacultyRegistration() {
 		$this->load->model('register');
 		if($this->register->save_faculty_data()) {
-			echo "faculty data saved";
+				echo "faculty registered<br/>";
+				echo "<a href='registerFaculty'>New Faculty</a><br/>";
+				echo "<a href='login'>Login Page</a>";
 		}
 	}
 	
 	public function performStudentRegistration() {
 		$this->load->model('register');
+		
 		if($this->register->save_student_data()) {
-			echo "student data saved";
+				echo "student registered<br/>";
+				echo "<a href='registerStudent'>New Student</a><br/>";
+				echo "<a href='login'>Login Page</a>";
 		}
+		
 	}	
+		
+	public function registerFaculty() {
+		$this->load->view('login/registerFaculty');
+	}	
+		
+	public function registerStudent() {
+		$this->load->view('login/registerStudent');
+	}
+	
+	public function login() {
+		$this->load->view('login/login');
+	}		
 		
 }

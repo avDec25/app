@@ -2,7 +2,7 @@
 
 <html> 
 	<head>
-		<title>Login</title>
+		<title>Faculty Registration</title>
         <?php
     		$this->load->helper('html');
     		$link = array(
@@ -13,16 +13,6 @@
 			);
 			echo link_tag($link); 
     	?>	
-
-	 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-		<link rel="stylesheet" href="/resources/demos/style.css" />
-		<script>
-			$(function() {
-				$( "#datepicker" ).datepicker();
-			});
-		</script> 	
     	
 	</head>
 <body>
@@ -52,13 +42,7 @@
             <input autofocus="autofocus" type="text" name="name" tabindex="1" size="35" required placeholder="Enter name as in Class X Marksheet">
           </dd>
                     
-          <dt>
-            <label for="dob"><br>
-            Date of Birth:</label>
-          </dt>
-          <dd>      	
-					<input name='dob' id="datepicker"/>
-          </dd>
+         
           <dt>
             <label id="gender"><br>
             Gender:</label>

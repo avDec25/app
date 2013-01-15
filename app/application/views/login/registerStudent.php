@@ -2,7 +2,7 @@
 
 <html> 
 	<head>
-		<title>Login</title>
+		<title>Student Registration</title>
         <?php
     		$this->load->helper('html');
     		$link = array(
